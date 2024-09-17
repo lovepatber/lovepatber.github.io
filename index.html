@@ -226,17 +226,6 @@
             document.body.style.background = `linear-gradient(135deg, ${randomColor} 0%, ${randomColor} 100%)`;
         }
 
-        document.getElementById("toggle").onclick = function () {
-            var text = document.getElementById("toggle").innerText;
-            if (text == 'TOGGLE') {
-                document.getElementById("toggle").innerText = 'HIDE';
-                document.getElementById("falling-emoji").show = false;
-            }else {
-                document.getElementById("toggle").innerText = 'TOGGLE';
-                document.getElementById("falling-emoji").show = true;
-            }
-        }
-
         // Initialize
         getRandomVerse();
         setInterval(updateTimer, 1000); // Update the timer every second
